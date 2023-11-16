@@ -7,7 +7,7 @@ import { Section } from '../layout/Section';
 const features: IVerticalFeatureRowProps[] = [
   {
     title: 'SmartPSS',
-    description: 'Para ver camaras',
+    description: 'Para ver las camaras',
     image: '/assets/images/logo_smartpss.jpg',
     imageAlt: 'SmartPSS',
     links: [
@@ -18,6 +18,10 @@ const features: IVerticalFeatureRowProps[] = [
       {
         label: 'SmartPSS 2',
         url: 'https://static.ninox.com.ar/bha/SmartPSSv2.zip',
+      },
+      {
+        label: 'SmartPSS LITE',
+        url: 'https://static.ninox.com.ar/bha/SmartPSSLite-V1.003.zip',
       },
     ],
   },

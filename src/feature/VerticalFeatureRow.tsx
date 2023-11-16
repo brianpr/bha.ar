@@ -1,4 +1,5 @@
 import className from 'classnames';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export type IVerticalFeatureRowProps = {
@@ -23,7 +24,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
     'items-center',
     {
       'flex-row-reverse': props.reverse,
-    }
+    },
   );
 
   const router = useRouter();
@@ -36,14 +37,14 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
 
         {props.links.map((link, index) => (
           <div key={index}>
-            <a
+            <Link
               className="underline"
               target="_blank"
               rel="noreferrer"
               href={link.url}
             >
               {link.label}
-            </a>
+            </Link>
           </div>
         ))}
       </div>

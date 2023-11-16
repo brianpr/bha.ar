@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
+import { Logo } from './Logo';
 import { Background } from '../background/Background';
 import { CenteredFooter } from '../footer/CenteredFooter';
 import { Section } from '../layout/Section';
-import { Logo } from './Logo';
 
 const Footer = () => (
   <Background color="bg-gray-100">
@@ -71,19 +71,13 @@ const Footer = () => (
         // }
       >
         <li>
-          <Link href="https://www.banhaia.com">
-            <a>banhaia.com</a>
-          </Link>
+          <Link href="https://www.banhaia.com">banhaia.com</Link>
         </li>
         <li>
-          <Link href="https://tienda.banhaia.com">
-            <a>Tienda</a>
-          </Link>
+          <Link href="https://tienda.banhaia.com">Tienda</Link>
         </li>
         <li>
-          <Link href="https://www.ninoxnet.com">
-            <a>NinoxNet</a>
-          </Link>
+          <Link href="https://www.ninoxnet.com">NinoxNet</Link>
         </li>
       </CenteredFooter>
     </Section>

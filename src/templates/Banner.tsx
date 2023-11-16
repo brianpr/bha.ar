@@ -11,9 +11,7 @@ const Banner = () => (
       subtitle="Videovigilancia, servicio tecnico de pc, sistema de gestion"
       button={
         <Link href="https://www.banhaia.com/">
-          <a>
-            <Button>banhaia.com</Button>
-          </a>
+          <Button>banhaia.com</Button>
         </Link>
       }
     />
