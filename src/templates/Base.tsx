@@ -1,16 +1,18 @@
-import { Banner } from './Banner';
+import React, { ReactNode } from 'react';
+
 import { Footer } from './Footer';
-import { Hero } from './Hero';
-import { VerticalFeatures } from './VerticalFeatures';
+import { Logo } from './Logo';
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
 
-const Base = () => (
+const Base = (props: { children?: ReactNode }) => (
   <div className="antialiased text-gray-600">
     <Meta title={AppConfig.title} description={AppConfig.description} />
-    <Hero />
-    <VerticalFeatures />
-    <Banner />
+    {/* <Hero /> */}
+    <div className="w-1/3">
+      <Logo />
+    </div>
+    {props.children}
     <Footer />
   </div>
 );
