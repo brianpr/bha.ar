@@ -18,7 +18,7 @@ export type ILink = {
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   const verticalFeatureClass = className(
-    'mt-20',
+    'mt-10',
     'flex',
     'flex-wrap',
     'items-center',
