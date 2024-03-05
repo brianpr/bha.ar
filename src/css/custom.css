@@ -1,0 +1,194 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Flex Container */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Alinear elementos horizontalmente */
+.flex-row {
+  justify-content: space-between; /* Puedes usar otras opciones como flex-start, flex-end, center, space-around, etc. */
+}
+
+/* Alinear elementos verticalmente */
+.flex-column {
+  align-items: center; /* Puedes usar otras opciones como flex-start, flex-end, baseline, stretch, etc. */
+}
+
+/* Alinear elementos en fila y columna */
+.flex-row-column {
+  flex-direction: row; /* Puedes cambiar a column según tus necesidades */
+}
+
+/* Alinear elementos en el centro */
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Espaciado entre elementos */
+.flex-space-between {
+  justify-content: space-between;
+}
+
+/* Alineación alrededor del contenido */
+.flex-space-around {
+  justify-content: space-around;
+}
+
+/* Alinear elementos en el extremo */
+.flex-end {
+  justify-content: flex-end;
+}
+
+/* Alineación al principio */
+.flex-start {
+  justify-content: flex-start;
+}
+
+/* Alineación de elementos al final de la columna */
+.flex-end-column {
+  align-items: flex-end;
+}
+
+/* Ancho del 25% */
+.width-25 {
+  width: 25%;
+}
+
+/* Ancho del 50% */
+.width-50 {
+  width: 50%;
+}
+
+/* Ancho del 75% */
+.width-75 {
+  width: 75%;
+}
+
+/* Ancho automático */
+.width-auto {
+  width: auto;
+}
+
+/* Flex 1 (expansión automática) */
+.flex-1 {
+  flex: 1;
+}
+
+/* Espaciado entre elementos */
+.margin-1 {
+  margin: 4px; /* Puedes ajustar el valor según tus necesidades */
+}
+
+/* Espaciado más grande */
+.margin-2 {
+  margin: 8px; /* Puedes ajustar el valor según tus necesidades */
+}
+
+/* Espaciado aún más grande */
+.margin-3 {
+  margin: 12px; /* Puedes ajustar el valor según tus necesidades */
+}
+
+/* Espaciado horizontal entre elementos */
+.margin-horizontal {
+  margin-right: 8px; /* Puedes ajustar el valor según tus necesidades */
+  margin-left: 8px; /* Puedes ajustar el valor según tus necesidades */
+}
+
+/* Espaciado vertical entre elementos */
+.margin-vertical {
+  margin-top: 8px; /* Puedes ajustar el valor según tus necesidades */
+  margin-bottom: 8px; /* Puedes ajustar el valor según tus necesidades */
+}
+
+/* Espaciado entre elementos hijos a nivel de la fila */
+.row-gap-1 {
+  gap: 4px; /* Puedes ajustar el valor según tus necesidades */
+}
+
+/* Espaciado más grande entre elementos hijos a nivel de la fila */
+.row-gap-2 {
+  gap: 8px; /* Puedes ajustar el valor según tus necesidades */
+}
+
+/* Espaciado aún más grande entre elementos hijos a nivel de la fila */
+.row-gap-3 {
+  gap: 12px; /* Puedes ajustar el valor según tus necesidades */
+}
+
+
+/* Estilo base para el control del formulario */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Estilo cuando el control del formulario está enfocado */
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Estilo para los controles del formulario deshabilitados */
+.form-control:disabled {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Estilos adicionales para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
