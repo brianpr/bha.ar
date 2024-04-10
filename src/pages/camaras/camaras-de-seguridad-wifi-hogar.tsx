@@ -5,7 +5,7 @@ function CustomPage() {
   return (
     <Layout>
       <iframe
-        src="https://tepuedeinteresar.com/camaras"
+        src="https://ventas.banhaia.com/camaras-de-seguridad-wifi-hogar"
         style={{ width: '100%', height: '100vh', border: 'none' }}
         allowFullScreen
       />
