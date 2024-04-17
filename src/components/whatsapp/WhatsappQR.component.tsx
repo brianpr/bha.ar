@@ -1,13 +1,19 @@
 import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-export default function WhatsappQR({ nombre, titulo, texto, mensaje , height = '150px' }) {
+export default function WhatsappQR({
+  nombre,
+  titulo,
+  texto,
+  mensaje,
+  height = '150px',
+}) {
   // acá se ejecuta javascript o typescript
 
   const numeros = [
     {
       nombre: 'Patricio',
-      numero: 5491123881641,
+      numero: 5491170141339,
       imagen: 'qr-patricio.png',
     },
     {
@@ -24,7 +30,7 @@ export default function WhatsappQR({ nombre, titulo, texto, mensaje , height = '
   }
 
   const baseURL = `https://api.whatsapp.com/send?phone=${seleccionado.numero}`;
-  const postURL = `${baseURL}&text=${mensaje}`;
+  const postURL = `${baseURL}&text=${mensaje || ''}`;
   const qrURL = useBaseUrl(`img/whatsapp/${seleccionado.imagen}`);
 
   // acá se genera el html del componente
