@@ -7,6 +7,7 @@ import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 import { Icon } from '@iconify/react';
+import WhatsappQR from '../components/whatsapp/WhatsappQR.component';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -30,6 +31,29 @@ export default function Home(): JSX.Element {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+
+        <div>
+          <div className="row">
+            <div className="col col--2 text--center"></div>
+            <div className="col col--4 text--center">
+              <WhatsappQR
+                titulo=""
+                nombre="Patricio"
+                texto="Hablar con Patricio"
+                mensaje="Hola, quiero más infromación"
+              />
+            </div>
+            <div className="col col--4 text--center">
+              <WhatsappQR
+                titulo=""
+                nombre="Nicolas"
+                texto="Hablar con Nicolas"
+                mensaje="Hola, quiero más infromación"
+              />
+            </div>
+            <div className="col col--2 text--center"></div>
+          </div>
+        </div>
       </main>
     </Layout>
   );

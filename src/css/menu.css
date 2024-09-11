@@ -40,7 +40,7 @@
   }
 
   .menu__link {
-    color: #333;
+    /* color: #333; */
     text-decoration: none;
     display: block;
     padding: 5px 0;

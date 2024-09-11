@@ -1,7 +1,5 @@
 import clsx from 'clsx';
 import styles from './styles.module.css';
-import { Icon } from '@iconify/react';
-import { ReactNode } from 'react';
 import CustomIcon from '../common/Icon';
 import Link from '@docusaurus/Link';
 
@@ -14,36 +12,39 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Servicio tecnico de PC',
+    title: 'Instructivos',
     icon: 'fluent-emoji:desktop-computer',
-    description: <>Realizamos arreglos de pc, etc</>,
-    link: '/docs/intro',
+    description: <>Tutoriales para ver las camaras en celular o pc</>,
+    link: '/docs/videovigilancia/instructivos',
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Descargas',
     icon: 'bx:cctv',
-    description: <>Videovigilancia; hogares, galerias, edificios</>,
-    link: '/docs/videovigilancia',
+    description: <>Descargar programas: SmartPSS, Imou, DMSS, etc.</>,
+    link: '/docs/videovigilancia/descargas',
   },
   {
-    title: 'Sistema de gestion',
+    title: 'Solicitudes',
     icon: 'fluent:cloud-flow-20-filled',
-    description: <>NinoxNet es un sistema de gestion...</>,
-    link: '/docs/intro',
+    description: <>Realizá una consulta o solicitá una cotización</>,
+    link: '/docs/videovigilancia/solicitudes',
   },
-  {
-    title: 'Generador de contraseñas',
-    icon: 'fluent:password-16-filled',
-    description: <>Herramienta para generacion de contraseñas</>,
-    link: '/docs/herramientas/password-generator',
-  },
+  // {
+  //   title: 'Generador de contraseñas',
+  //   icon: 'fluent:password-16-filled',
+  //   description: <>Herramienta para generacion de contraseñas</>,
+  //   link: '/docs/herramientas/password-generator',
+  // },
 ];
 
-function Feature({ icon, description, link }: FeatureItem) {
+function Feature({ icon, title, description, link }: FeatureItem) {
   return (
     <div className={clsx('col col--3 margin-2')}>
       <Link href={link}>
         <div className="card">
+          <div className="card__header">
+            <h3>{title}</h3>
+          </div>
           <div className="card__body">
             <CustomIcon icon={icon} />
             <p>{description}</p>

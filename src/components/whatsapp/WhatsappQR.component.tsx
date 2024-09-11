@@ -46,9 +46,11 @@ export default function WhatsappQR({
         borderRadius: '10px',
       }}
     >
-      <div style={{ marginTop: '-9px', fontSize: '15px', color: '#fff' }}>
-        {titulo}
-      </div>
+      {titulo && (
+        <div style={{ marginTop: '-9px', fontSize: '15px', color: '#fff' }}>
+          {titulo}
+        </div>
+      )}
 
       <a href={postURL} target="_blank" style={{ height }}>
         <img src={qrURL} alt={mensaje} style={{ height }} />

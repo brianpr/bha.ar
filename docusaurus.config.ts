@@ -3,12 +3,12 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'bha.ar',
-  tagline: 'Banhaia',
+  title: 'Banhaia Videovigilancia',
+  tagline: 'Camaras de seguridad',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://bha.ar',
+  url: 'https://camaras.bha.ar',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -64,19 +64,19 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'herramientasSidebar',
-          position: 'left',
-          label: 'Herramientas',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'herramientasSidebar',
+        //   position: 'left',
+        //   label: 'Herramientas',
+        // },
         {
           type: 'docSidebar',
           sidebarId: 'videovigilanciaSidebar',
           position: 'left',
           label: 'Videovigilancia',
         },  
-        {to: '/blog', label: 'Blog', position: 'left'},
+        // {to: '/blog', label: 'Blog', position: 'left'},
         // {
         //   href: 'https://github.com/facebook/docusaurus',
         //   label: 'GitHub',
@@ -91,8 +91,8 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Videovigilancia',
+              to: '/docs/videovigilancia',
             },
           ],
         },
@@ -100,34 +100,34 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Banhaia',
+              href: 'https://www.banhaia.com',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'NinoxNet',
+              href: 'https://www.ninoxnet.com',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Tienda Banhaia',
+              href: 'https://tienda.banhaia.com',
             },
           ],
         },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
+        // {
+        //   title: 'More',
+        //   items: [
+        //     {
+        //       label: 'Blog',
+        //       to: '/blog',
+        //     },
+        //     {
+        //       label: 'GitHub',
+        //       href: 'https://github.com/facebook/docusaurus',
+        //     },
+        //   ],
+        // },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Banhaia S.R.L.`,
     },
     prism: {
       theme: prismThemes.github,
