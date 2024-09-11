@@ -149,7 +149,6 @@
   gap: 12px; /* Puedes ajustar el valor según tus necesidades */
 }
 
-
 /* Estilo base para el control del formulario */
 .form-control {
   display: block;
@@ -178,7 +177,6 @@
   opacity: 1;
 }
 
-
 .button-container {
   display: flex;
   flex-wrap: wrap;
@@ -192,4 +190,13 @@
     flex-direction: column;
     align-items: center;
   }
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  /* white-space: nowrap; */
+  /* overflow-wrap: break-word !important; */
+  /* word-wrap: break-word !important;
+  word-break: break-word!important;
+  hyphens: auto !important; */
 }
